@@ -1,0 +1,41 @@
+#include "../push_swap.h"
+
+int	is_number(char *str)
+{
+	int	i;
+
+	if (!str || !*str)
+		return (0);
+	i = 0;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	while (str[i])
+	{
+		if (str[i] < '0' || str[i] > '9')
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
+int	is_duplicate(t_stack *stack, int value)
+{
+	while (stack)
+	{
+		if (stack->value == value)
+			return (1);
+		stack = stack->next;
+	}
+	return (0);
+}
+
+
+int is_long(long num)
+{
+	if (num < 0)
+		num = -num;
+	if (num % 1000000000 > 10)
+		return (1);
+
+	return (0);
+}
