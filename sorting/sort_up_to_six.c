@@ -46,19 +46,29 @@ static void	push_min_to_b(t_stack **a, t_stack **b)
 	pb(a, b);
 }
 
-void	sort_five(t_stack **a, t_stack **b)
+void	sort_up_to_six(t_stack **a, t_stack **b)
 {
-	if (stack_size(*a) != 5)
+	if (stack_size(*a) < 5)
 	{
 		push_min_to_b(a, b);
 		sort_three(a);
+		pa(a, b);
+	}
+	else if (stack_size(*a) == 5)
+	{
+		push_min_to_b(a, b);
+		push_min_to_b(a, b);
+		sort_three(a);
+		pa(a, b);
 		pa(a, b);
 	}
 	else
 	{
 		push_min_to_b(a, b);
 		push_min_to_b(a, b);
+		push_min_to_b(a, b);
 		sort_three(a);
+		pa(a, b);
 		pa(a, b);
 		pa(a, b);
 	}

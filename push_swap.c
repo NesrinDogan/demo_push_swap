@@ -20,8 +20,8 @@ int	main(int argc, char **argv)
 	}
 	else if (size == 3)
 		sort_three(&a);
-	else if (size <= 5)
-		sort_five(&a, &b);
+	else if (size <= 6)
+		sort_up_to_six(&a, &b);
 	else
 		radix_sort(&a, &b);
 	free_stack(&a);

@@ -45,7 +45,7 @@ void				rrr(t_stack **a, t_stack **b);
 
 /* sorting */
 void				sort_three(t_stack **a);
-void				sort_five(t_stack **a, t_stack **b);
+void				sort_up_to_six(t_stack **a, t_stack **b);
 void				index_stack(t_stack *a, int size);
 void				radix_sort(t_stack **a, t_stack **b);
 

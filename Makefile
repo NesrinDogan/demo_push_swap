@@ -34,7 +34,7 @@ SRC = push_swap.c \
 	  $(PARSING)/check_errors.c \
 	  $(PARSING)/parse_args.c \
 	  $(SORTING)/sort_three.c \
-	  $(SORTING)/sort_five.c \
+	  $(SORTING)/sort_up_to_six.c \
 	  $(SORTING)/index_stack.c \
 	  $(SORTING)/radix_sort.c
 
