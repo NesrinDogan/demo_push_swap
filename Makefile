@@ -8,13 +8,11 @@ LIBFT_DIR	= libft
 
 LIBFT	= $(LIBFT_DIR)/libft.a
 
-# Klasörler
 UTILS = utils
 OPERATIONS = operations
 PARSING = parsing
 SORTING = sorting
 
-# Tüm kaynak dosyalar
 SRC = push_swap.c \
 	  $(UTILS)/stack_utils.c \
 	  $(UTILS)/free_utils.c \
@@ -40,7 +38,6 @@ SRC = push_swap.c \
 
 OBJ = $(SRC:.c=.o)
 
-# Derleme kuralları
 all: $(NAME)
 
 $(NAME): $(OBJ)
