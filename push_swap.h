@@ -43,5 +43,6 @@ void				sort_three(t_stack **a);
 void				sort_up_to_sixty(t_stack **a, t_stack **b);
 void				index_stack(t_stack *a, int size);
 void				radix_sort(t_stack **a, t_stack **b);
+int					is_sorted(t_stack *stack);
 
 #endif

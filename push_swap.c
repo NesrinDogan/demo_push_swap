@@ -11,13 +11,10 @@ int	main(int argc, char **argv)
 	b = NULL;
 	a = parse_args(argc, argv);
 	size = stack_size(a);
-	if (size < 2)
+	if (size < 2 || is_sorted(a))
 		return (0);
 	if (size == 2)
-	{
-		if (a->value > a->next->value)
-			sa(&a);
-	}
+		sa(&a);
 	else if (size == 3)
 		sort_three(&a);
 	else if (size <= 59)
@@ -28,3 +25,4 @@ int	main(int argc, char **argv)
 	free_stack(&b);
 	return (0);
 }
+

@@ -1,5 +1,4 @@
 #include "../push_swap.h"
-
 // 3 elemanlı stack A'yı sıralar
 void	sort_three(t_stack **a)
 {
