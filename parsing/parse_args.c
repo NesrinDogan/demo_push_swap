@@ -47,5 +47,7 @@ t_stack	*parse_args(int argc, char **argv)
 		parse_and_add(&a, argv[i]);
 		i++;
 	}
+	if (stack_size(a) == 1 || is_sorted(a))
+		free_stack(&a);
 	return (a);
 }
